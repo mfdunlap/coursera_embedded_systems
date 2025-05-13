@@ -9,7 +9,8 @@
 #
 #*****************************************************************************
 
-# Add your Source files to this variable
+
+# Platform specific source files
 ifeq ($(PLATFORM),HOST)
     SOURCES = main.c \
               memory.c \
@@ -26,7 +27,7 @@ else
 endif
 
 
-# Add your include paths to this variable
+# Include paths
 INCLUDES = -I../include/CMSIS \
            -I../include/common \
            -I../include/msp432 \
